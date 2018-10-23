@@ -113,18 +113,6 @@ public class RNFusedLocationModule extends ReactContextBaseJavaModule {
         return TAG;
     }
 
-    @Override
-    public Map<String, Object> getConstants() {
-        final Map<String, Object> constants = new HashMap<>();
-        constants.put(LocationError.PERMISSION_DENIED.name(), LocationError.PERMISSION_DENIED.getValue());
-        constants.put(LocationError.POSITION_UNAVAILABLE.name(), LocationError.POSITION_UNAVAILABLE.getValue());
-        constants.put(LocationError.TIMEOUT.name(), LocationError.TIMEOUT.getValue());
-        constants.put(LocationError.PLAY_SERVICE_NOT_AVAILABLE.name(), LocationError.PLAY_SERVICE_NOT_AVAILABLE.getValue());
-        constants.put(LocationError.SETTINGS_NOT_SATISFIED.name(), LocationError.SETTINGS_NOT_SATISFIED.getValue());
-        constants.put(LocationError.INTERNAL_ERROR.name(), LocationError.INTERNAL_ERROR.getValue());
-        return constants;
-    }
-
     /**
      * Get the current location settings. This return the current state of locations providers in
      * the device.
